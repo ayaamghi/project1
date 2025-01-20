@@ -61,7 +61,7 @@ public class ScrabbleProjectDriver {
   // Implement a loop that asks the user for words to evaluate against both scrabbleSet and scrabbleSet2
     Scanner scanner = new Scanner(System.in);
     boolean sentinel = false;
-
+while(!sentinel) {
     System.out.print("Enter a word to evaluate (or type 'exit' to quit): ");
     String input = scanner.nextLine();
     sentinel = input.equalsIgnoreCase("exit");
@@ -69,12 +69,14 @@ public class ScrabbleProjectDriver {
     if (!sentinel) {
         int score1 = scrabbleSet.calculatePoints(input, false);
         int score2 = scrabbleSet2.calculatePoints(input, false);
-
-        System.out.println("ScrabbleSet 1 - Word: " + input + ", Score: " + score1);
-        System.out.println("ScrabbleSet 2 - Word: " + input + ", Score: " + score2);
-    }
-    scanner.close();
+        String resultOne = score1 == -1 ? "ScrabbleSet 1 - Word " + input + " is invalid." : "ScrabbleSet 1 - Word: " + input + ", Score: " + score1;
+        String resultTwo = score2 == -1 ? "ScrabbleSet 2 - Word " + input + " is invalid." : "ScrabbleSet 2 - Word: " + input + ", Score: " + score2;
+        System.out.println(resultOne);
+        System.out.println(resultTwo);}
 }
+scanner.close();
+
+    }
 
 
     private static boolean isValidWord(String word) {

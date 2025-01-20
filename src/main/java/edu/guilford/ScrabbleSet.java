@@ -90,7 +90,6 @@ public class ScrabbleSet {
             currentDist.setCount(currentDist.getCount() + 1);
             leftover--;
         }
-        System.out.println(tileDistributions.get(0).getTile().getLetter() + " " + tileDistributions.get(0).getCount()); 
 
     }
     @Override

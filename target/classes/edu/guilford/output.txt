@@ -1,0 +1,66 @@
+ScrabbleSet{tileDistributions=[Tile:   Value: 0 Count: 2, Tile: A Value: 1 Count: 9, Tile: B Value: 3 Count: 2, Tile: C Value: 3 Count: 2, Tile: D Value: 2 Count: 4, Tile: E Value: 1 Count: 12, Tile: F Value: 4 Count: 2, Tile: G Value: 2 Count: 3, Tile: H Value: 4 Count: 2, Tile: I Value: 1 Count: 9, Tile: J Value: 8 Count: 1, Tile: K Value: 5 Count: 1, Tile: L Value: 1 Count: 4, Tile: M Value: 3 Count: 2, Tile: N Value: 1 Count: 6, Tile: O Value: 1 Count: 8, Tile: P Value: 3 Count: 2, Tile: Q Value: 10 Count: 1, Tile: R Value: 1 Count: 6, Tile: S Value: 1 Count: 4, Tile: T Value: 1 Count: 6, Tile: U Value: 1 Count: 4, Tile: V Value: 4 Count: 2, Tile: W Value: 4 Count: 2, Tile: X Value: 8 Count: 1, Tile: Y Value: 4 Count: 2, Tile: Z Value: 10 Count: 1]}
+ScrabbleSet{tileDistributions=[Tile:   Value: 0 Count: 2, Tile: A Value: 1 Count: 5, Tile: B Value: 3 Count: 4, Tile: C Value: 3 Count: 2, Tile: D Value: 2 Count: 6, Tile: E Value: 1 Count: 3, Tile: F Value: 4 Count: 5, Tile: G Value: 2 Count: 3, Tile: H Value: 4 Count: 6, Tile: I Value: 1 Count: 2, Tile: J Value: 8 Count: 2, Tile: K Value: 5 Count: 8, Tile: L Value: 1 Count: 3, Tile: M Value: 3 Count: 6, Tile: N Value: 1 Count: 2, Tile: O Value: 1 Count: 4, Tile: P Value: 3 Count: 5, Tile: Q Value: 10 Count: 2, Tile: R Value: 1 Count: 3, Tile: S Value: 1 Count: 3, Tile: T Value: 1 Count: 4, Tile: U Value: 1 Count: 5, Tile: V Value: 4 Count: 6, Tile: W Value: 4 Count: 3, Tile: X Value: 8 Count: 2, Tile: Y Value: 4 Count: 2, Tile: Z Value: 10 Count: 2]}
+HELLO -> 8
+WORLD -> 9
+QUIZ -> 22
+JAZZ -> -1
+XYZ -> 22
+ABRACADABRA -> 18
+SYZYGY -> -1
+COMPUTER -> 14
+PROGRAM -> 12
+SERENDIPITY -> 17
+PALINDROME -> 15
+QUEUE -> 14
+JAVA -> 14
+SCRABBLE -> 14
+RHYTHM -> 17
+MYTH -> 12
+POLYNYA -> 15
+ZYMURGY -> 25
+BENCH -> 12
+KWANZAA -> 23
+XYLOPHONE -> 24
+BAGPIPES -> 15
+PUZZLE -> -1
+SQUEEZY -> 28
+EXAMPLES -> 19
+exquisitely 30
+dizzy
+exquisitely 30
+ass
+dazzling 28
+usual
+excommunication 30
+see
+exquisitely 30
+going
+exquisitely 30
+mummy
+exquisitely 30
+papa
+excommunication 30
+see
+exquisitely 30
+high
+exquisitely 30
+papa
+exquisitely 30
+that
+Enter a word to evaluate (or type 'exit' to quit): ScrabbleSet 1 - Word: welcome, Score: 14
+ScrabbleSet 2 - Word: welcome, Score: 14
+Enter a word to evaluate (or type 'exit' to quit): ScrabbleSet 1 - Word: hello, Score: 8
+ScrabbleSet 2 - Word: hello, Score: 8
+Enter a word to evaluate (or type 'exit' to quit): ScrabbleSet 1 - Word: protractor, Score: 14
+ScrabbleSet 2 - Word: protractor, Score: 14
+Enter a word to evaluate (or type 'exit' to quit): ScrabbleSet 1 - Word pizzazzzz is invalid.
+ScrabbleSet 2 - Word pizzazzzz is invalid.
+Enter a word to evaluate (or type 'exit' to quit): ScrabbleSet 1 - Word pizzas is invalid.
+ScrabbleSet 2 - Word: pizzas, Score: 26
+Enter a word to evaluate (or type 'exit' to quit): ScrabbleSet 1 - Word: printer, Score: 9
+ScrabbleSet 2 - Word: printer, Score: 9
+Enter a word to evaluate (or type 'exit' to quit): ScrabbleSet 1 - Word: bento, Score: 7
+ScrabbleSet 2 - Word: bento, Score: 7
+Enter a word to evaluate (or type 'exit' to quit): ScrabbleSet 1 - Word: bro, Score: 5
+ScrabbleSet 2 - Word: bro, Score: 5
+Enter a word to evaluate (or type 'exit' to quit): exit
