@@ -48,9 +48,13 @@ public class ScrabbleProjectDriver {
             System.out.printf("%s -> %d%n", word, score);
         }
         List<String> frankensteinWords = readWordsFromFile(
-                "src/main/java/edu/guilford/frankenstein.txt"); //relative import wouldnt work 
-        System.out.println(findMaxScore(frankensteinWords, scrabbleSet, false)); //can caclulate with blank or no blank from method, rather then creating a new scrabbleset just for blank vs no blank
-        System.out.println(findShortestInvalid(frankensteinWords, scrabbleSet, false)); //there are no invalid words if you use blanks
+                "src/main/java/edu/guilford/frankenstein.txt"); // relative import wouldnt work
+        System.out.println(findMaxScore(frankensteinWords, scrabbleSet, false)); // can caclulate with blank or no blank
+                                                                                 // from method, rather then creating a
+                                                                                 // new scrabbleset just for blank vs no
+                                                                                 // blank
+        System.out.println(findShortestInvalid(frankensteinWords, scrabbleSet, false)); // there are no invalid words if
+                                                                                        // you use blanks
 
         for (int i = 0; i < 10; i++) {
             ScrabbleSet randomSet = new ScrabbleSet();
@@ -58,26 +62,29 @@ public class ScrabbleProjectDriver {
             System.out.print(findShortestInvalid(frankensteinWords, randomSet, false) + '\n');
         }
 
-  // Implement a loop that asks the user for words to evaluate against both scrabbleSet and scrabbleSet2
-    Scanner scanner = new Scanner(System.in);
-    boolean sentinel = false;
-while(!sentinel) {
-    System.out.print("Enter a word to evaluate (or type 'exit' to quit): ");
-    String input = scanner.nextLine();
-    sentinel = input.equalsIgnoreCase("exit");
+        // Implement a loop that asks the user for words to evaluate against both
+        // scrabbleSet and scrabbleSet2
+        Scanner scanner = new Scanner(System.in);
+        boolean sentinel = false;
+        while (!sentinel) {
+            System.out.print("Enter a word to evaluate (or type 'exit' to quit): ");
+            String input = scanner.nextLine();
+            sentinel = input.equalsIgnoreCase("exit");
 
-    if (!sentinel) {
-        int score1 = scrabbleSet.calculatePoints(input, false);
-        int score2 = scrabbleSet2.calculatePoints(input, false);
-        String resultOne = score1 == -1 ? "ScrabbleSet 1 - Word " + input + " is invalid." : "ScrabbleSet 1 - Word: " + input + ", Score: " + score1;
-        String resultTwo = score2 == -1 ? "ScrabbleSet 2 - Word " + input + " is invalid." : "ScrabbleSet 2 - Word: " + input + ", Score: " + score2;
-        System.out.println(resultOne);
-        System.out.println(resultTwo);}
-}
-scanner.close();
+            if (!sentinel) {
+                int score1 = scrabbleSet.calculatePoints(input, false);
+                int score2 = scrabbleSet2.calculatePoints(input, false);
+                String resultOne = score1 == -1 ? "ScrabbleSet 1 - Word " + input + " is invalid."
+                        : "ScrabbleSet 1 - Word: " + input + ", Score: " + score1;
+                String resultTwo = score2 == -1 ? "ScrabbleSet 2 - Word " + input + " is invalid."
+                        : "ScrabbleSet 2 - Word: " + input + ", Score: " + score2;
+                System.out.println(resultOne);
+                System.out.println(resultTwo);
+            }
+        }
+        scanner.close();
 
     }
-
 
     private static boolean isValidWord(String word) {
         return word.matches("[A-Za-z]+");
