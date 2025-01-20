@@ -56,7 +56,7 @@ public class ScrabbleSetExactScoresTest {
             "EXAMPLES, 19"
         })
         void testExactWordScore(String word, int expectedScore) {
-            int actualScore = scrabbleSet.calculatePoints(word);
+            int actualScore = scrabbleSet.calculatePoints(word, false);
             System.out.printf("%s -> Expected: %d, Actual: %d%n", word, expectedScore, actualScore);
             Assertions.assertEquals(expectedScore, actualScore,
                          "Score mismatch for word: " + word);

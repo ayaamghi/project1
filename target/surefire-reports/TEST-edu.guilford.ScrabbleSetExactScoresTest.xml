@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.guilford.ScrabbleSetExactScoresTest" time="0.069" tests="25" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/ayaam/Programming/School/project1/target/test-classes:/Users/ayaam/Programming/School/project1/target/classes:/Users/ayaam/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/ayaam/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/ayaam/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/ayaam/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/ayaam/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/ayaam/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/Users/ayaam/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/ayaam/Programming/School/project1/target/surefire/surefirebooter-20250118223720978_3.jar /Users/ayaam/Programming/School/project1/target/surefire 2025-01-18T22-37-20_928-jvmRun1 surefire-20250118223720978_1tmp surefire_0-20250118223720978_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="${packageClassName}"/>
+    <property name="surefire.test.class.path" value="/Users/ayaam/Programming/School/project1/target/test-classes:/Users/ayaam/Programming/School/project1/target/classes:/Users/ayaam/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/ayaam/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/ayaam/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/ayaam/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/ayaam/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/ayaam/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/Users/ayaam/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/ayaam"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/23.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/ayaam/Programming/School/project1"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/ayaam/Programming/School/project1/target/surefire/surefirebooter-20250118223720978_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.1"/>
+    <property name="user.name" value="ayaam"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="maven.ext.class.path" value="/Users/ayaam/.vscode/extensions/oracle.oracle-java-23.0.1/nbcode/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/Users/ayaam/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/gv/d4rl4_8x5pd_b029v61gl5dr0000gn/T/"/>
+    <property name="java.version" value="23.0.1"/>
+    <property name="user.dir" value="/Users/ayaam/Programming/School/project1"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/ayaam/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="23.0.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testExactWordScore(String, int)[1]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.021">
+    <system-out><![CDATA[HELLO -> Expected: 8, Actual: 8
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[2]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.001">
+    <system-out><![CDATA[WORLD -> Expected: 9, Actual: 9
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[3]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.001">
+    <system-out><![CDATA[QUIZ -> Expected: 22, Actual: 22
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[4]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[JAZZ -> Expected: -1, Actual: -1
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[5]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[XYZ -> Expected: 22, Actual: 22
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[6]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[ABRACADABRA -> Expected: 18, Actual: 18
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[7]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[SYZYGY -> Expected: -1, Actual: -1
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[8]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[COMPUTER -> Expected: 14, Actual: 14
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[9]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.001">
+    <system-out><![CDATA[PROGRAM -> Expected: 12, Actual: 12
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[10]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.001">
+    <system-out><![CDATA[SERENDIPITY -> Expected: 17, Actual: 17
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[11]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.001">
+    <system-out><![CDATA[PALINDROME -> Expected: 15, Actual: 15
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[12]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.001">
+    <system-out><![CDATA[QUEUE -> Expected: 14, Actual: 14
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[13]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.001">
+    <system-out><![CDATA[JAVA -> Expected: 14, Actual: 14
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[14]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[SCRABBLE -> Expected: 14, Actual: 14
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[15]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[RHYTHM -> Expected: 17, Actual: 17
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[16]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[MYTH -> Expected: 12, Actual: 12
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[17]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.001">
+    <system-out><![CDATA[POLYNYA -> Expected: 15, Actual: 15
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[18]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.001">
+    <system-out><![CDATA[ZYMURGY -> Expected: 25, Actual: 25
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[19]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[BENCH -> Expected: 12, Actual: 12
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[20]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[KWANZAA -> Expected: 23, Actual: 23
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[21]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[XYLOPHONE -> Expected: 24, Actual: 24
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[22]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.001">
+    <system-out><![CDATA[BAGPIPES -> Expected: 15, Actual: 15
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[23]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[PUZZLE -> Expected: -1, Actual: -1
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[24]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.0">
+    <system-out><![CDATA[SQUEEZY -> Expected: 28, Actual: 28
+]]></system-out>
+  </testcase>
+  <testcase name="testExactWordScore(String, int)[25]" classname="edu.guilford.ScrabbleSetExactScoresTest" time="0.001">
+    <system-out><![CDATA[EXAMPLES -> Expected: 19, Actual: 19
+]]></system-out>
+  </testcase>
+</testsuite>

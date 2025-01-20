@@ -44,69 +44,48 @@ public class ScrabbleProjectDriver {
         System.out.println(scrabbleSet);
         System.out.println(scrabbleSet2);
         for (String word : words) {
-            int score = scrabbleSet.calculatePoints(word);
+            int score = scrabbleSet.calculatePoints(word, false);
             System.out.printf("%s -> %d%n", word, score);
         }
         List<String> frankensteinWords = readWordsFromFile(
-                "src/main/java/edu/guilford/frankenstein.txt");
-        System.out.println(findMaxScore(frankensteinWords, scrabbleSet));
-        System.out.println(findShortestInvalid(frankensteinWords, scrabbleSet));
+                "src/main/java/edu/guilford/frankenstein.txt"); //relative import wouldnt work 
+        System.out.println(findMaxScore(frankensteinWords, scrabbleSet, false)); //can caclulate with blank or no blank from method, rather then creating a new scrabbleset just for blank vs no blank
+        System.out.println(findShortestInvalid(frankensteinWords, scrabbleSet, false)); //there are no invalid words if you use blanks
 
         for (int i = 0; i < 10; i++) {
-            System.out.println(findMaxScore(frankensteinWords, new ScrabbleSet()));
-            System.out.println(findShortestInvalid(frankensteinWords, new ScrabbleSet()));
+            ScrabbleSet randomSet = new ScrabbleSet();
+            System.out.println(findMaxScore(frankensteinWords, randomSet, false));
+            System.out.print(findShortestInvalid(frankensteinWords, randomSet, false) + '\n');
         }
-        /*
-         * exquisitely 30
-         * inn
-         * exquisitely 30
-         * all
-         * exquisitely 30
-         * away
-         * exquisitely 30
-         * Swiss
-         * exquisitely 30
-         * added
-         * exquisitely 30
-         * unknown
-         * exquisitely 30
-         * off
-         * exquisitely 30
-         * papa
-         * exquisitely 30
-         * added
-         * exquisitely 30
-         * see
-         */
-   
-    //implement a loop that asks user for words to evaluate against both scrabbleSet and scrabbleSet2
+
+  // Implement a loop that asks the user for words to evaluate against both scrabbleSet and scrabbleSet2
     Scanner scanner = new Scanner(System.in);
     boolean sentinel = false;
-    while(!sentinel) {            
-     System.out.print("Enter a word to evaluate (or type 'exit' to quit): ");
-    String input = scanner.nextLine();
-    if (input.equalsIgnoreCase("exit")) {
-        sentinel = true;
-    }
-    int score1 = scrabbleSet.calculatePoints(input.toUpperCase());
-    int score2 = scrabbleSet2.calculatePoints(input.toUpperCase());
 
-    System.out.println("ScrabbleSet 1 - Word: " + input + ", Score: " + score1);
-    System.out.println("ScrabbleSet 2 - Word: " + input + ", Score: " + score2);
+    System.out.print("Enter a word to evaluate (or type 'exit' to quit): ");
+    String input = scanner.nextLine();
+    sentinel = input.equalsIgnoreCase("exit");
+
+    if (!sentinel) {
+        int score1 = scrabbleSet.calculatePoints(input, false);
+        int score2 = scrabbleSet2.calculatePoints(input, false);
+
+        System.out.println("ScrabbleSet 1 - Word: " + input + ", Score: " + score1);
+        System.out.println("ScrabbleSet 2 - Word: " + input + ", Score: " + score2);
+    }
+    scanner.close();
 }
 
-scanner.close();
-        }
 
     private static boolean isValidWord(String word) {
         return word.matches("[A-Za-z]+");
     }
 
-    private static String findMaxScore(List<String> words, ScrabbleSet scrabbleSet) {
+    private static String findMaxScore(List<String> words, ScrabbleSet scrabbleSet, boolean blanksOn) {
         int maxScore = 0;
         String maxWord = null;
         for (String word : words) {
-            int score = scrabbleSet.calculatePoints(word);
+            int score = scrabbleSet.calculatePoints(word, blanksOn);
             if (score > maxScore) {
                 maxScore = score;
                 maxWord = word;
@@ -115,10 +94,10 @@ scanner.close();
         return maxWord + " " + maxScore;
     }
 
-    private static String findShortestInvalid(List<String> words, ScrabbleSet scrabbleSet) {
+    private static String findShortestInvalid(List<String> words, ScrabbleSet scrabbleSet, boolean blanksOn) {
         String minWord = null;
         for (String word : words) {
-            int score = scrabbleSet.calculatePoints(word);
+            int score = scrabbleSet.calculatePoints(word, blanksOn);
             if (score == -1) {
                 if (minWord == null || word.length() < minWord.length()) {
                     minWord = word;
